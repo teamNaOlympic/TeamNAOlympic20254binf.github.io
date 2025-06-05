@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAO CHALLENGE - IL GIUDICE DEL FUTURO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Univers47LightCondensed", sans-serif;
+      color: #1C2B3A;
+      background-color: #EAEDED;
+      text-transform: uppercase;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #0E1926;
+      color: #F5A623;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-left: auto;
+    }
+    .logo-img {
+      width: 80px;
+      height: auto;
+      border-radius: 50%;
+    }
+    .logo-text {
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+    nav {
+      flex-grow: 1;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #F5A623;
+      font-size: 1.2em;
+      font-weight: 600;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+    }
+    /* Effetto hover: inverti colori */
+    nav a:hover {
+      background-color: #F5A623;
+      color: #0E1926;
+      border-radius: 5px;
+    }
+    .hero {
+      text-align: center;
+      padding: 170px 20px 140px;
+      background-color: #142533;
+      color: #F5A623;
+    }
+    .hero h1 {
+      font-size: 4em; /* PIÙ GRANDE */
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+    .hero p {
+      font-size: 1.4em;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 100px 20px;
+      text-align: center;
+      background-color: #F5F5F5;
+      color: #1C2B3A;
+    }
+    .section:nth-child(even) {
+      background-color: #DDE2E6;
+    }
+    .section-content {
+      max-width: 600px;
+    }
+    .section img {
+      width: 350px;
+      height: auto;
+      border-radius: 20px;
+    }
+    .section h2 {
+      font-size: 3em; /* PIÙ GRANDE */
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+    .section p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .email {
+      text-transform: none;
+    }
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #0E1926;
+      color: #F5A623;
+      font-size: 1em;
+    }
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3em;
+      }
+      .section h2 {
+        font-size: 2.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#progetto">IL PROGETTO</a></li>
+        <li><a href="#innovazione">INNOVAZIONE</a></li>
+        <li><a href="#contatti">CONTATTI</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <span class="logo-text">NAOLYMPIC</span>
+      <img src="logo2.png" alt="NAOLYMPIC LOGO" class="logo-img">
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>NAO: IL GIUDICE DI GARA DEL FUTURO</h1>
+    <p>PORTIAMO PRECISIONE E INNOVAZIONE NELLE GARE DI ATLETICA LEGGERA GRAZIE AL ROBOT NAO, PROGRAMMATO PER GARANTIRE UN GIUDIZIO IMPARZIALE E ACCURATO.</p>
+  </section>
+
+  <section class="section" id="progetto">
+    <img src="nao.jpeg" alt="IL PROGETTO">
+    <div class="section-content">
+      <h2>IL PROGETTO</h2>
+      <p>SIAMO STUDENTI DI 4° ITIS CANNIZZARO DI RHO E, NELL'AMBITO DEL PCTO (NAO CHALLENGE), STIAMO SVILUPPANDO UN SISTEMA CHE UTILIZZA IL ROBOT NAO COME GIUDICE DI GARA. IL NOSTRO OBIETTIVO È RIDURRE GLI ERRORI UMANI E OFFRIRE UN SUPPORTO TECNOLOGICO AVANZATO NELLE COMPETIZIONI DI CORSA SU PISTA.</p>
+    </div>
+  </section>
+
+  <section class="section" id="innovazione">
+    <div class="section-content">
+      <h2>INNOVAZIONE & TECNOLOGIA</h2>
+      <p>IL ROBOT NAO SARÀ DOTATO DI SENSORI AVANZATI E ALGORITMI DI RICONOSCIMENTO PER MONITORARE LE PRESTAZIONI DEGLI ATLETI, RILEVARE EVENTUALI ERRORI E REGISTRARE I TEMPI IN MANIERA PRECISA. UNA VERA RIVOLUZIONE PER RENDERE OGNI GARA PIÙ EQUA E TRASPARENTE.</p>
+    </div>
+    <img src="nao.jpeg" alt="INNOVAZIONE E TECNOLOGIA">
+  </section>
+
+  <section class="section" id="contatti">
+    <img src="nao.jpeg" alt="CONTATTI">
+    <div class="section-content">
+      <h2>CONTATTI</h2>
+      <p>PER ULTERIORI INFORMAZIONI O PER COLLABORARE CON NOI, SCRIVETECI A: <a href="mailto:team.naolympic@gmail.com" class="email">team.naolympic@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 NAO CHALLENGE - TUTTI I DIRITTI RISERVATI.
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAO CHALLENGE - IL GIUDICE DEL FUTURO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Univers47LightCondensed", sans-serif;
+      color: #1C2B3A;
+      background-color: #EAEDED;
+      text-transform: uppercase;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #0E1926;
+      color: #F5A623;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #F5A623;
+      font-size: 1.2em;
+      font-weight: 600;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    nav a:hover {
+      background-color: #F5A623;
+      color: #0E1926;
+      border-radius: 5px;
+    }
+    .iframe-container {
+      width: 100%;
+      height: 80vh;
+      margin-top: 100px;
+      display: none;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="loadPage('home.html')">HOME</a></li>
+        <li><a href="#" onclick="loadPage('progetto.html')">IL PROGETTO</a></li>
+        <li><a href="#" onclick="loadPage('innovazione.html')">INNOVAZIONE</a></li>
+        <li><a href="#" onclick="loadPage('contatti.html')">CONTATTI</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <span class="logo-text">NAOLYMPIC</span>
+      <img src="logo2.png" alt="NAOLYMPIC LOGO" class="logo-img">
+    </div>
+  </header>
+
+  <div class="iframe-container" id="iframeContainer">
+    <iframe id="contentFrame"></iframe>
+  </div>
+
+  <script>
+    function loadPage(url) {
+      document.getElementById('iframeContainer').style.display = 'block';
+      document.getElementById('contentFrame').src = url;
+    }
+  </script>
+</body>
+</html>
